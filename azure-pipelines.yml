@@ -69,10 +69,10 @@ stages:
   displayName: 'Deploy the web application'
   #dependsOn: Build
   jobs:
-  - deployment: Deploy
+  - job: Deploym
     pool:
       vmImage: 'ubuntu-16.04'
-    environment: dev
+    #environment: dev
     variables:
     - group: Release
     strategy:
